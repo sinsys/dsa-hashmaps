@@ -101,6 +101,7 @@ class HashMap {
       if (loadRatio > HashMap.MAX_LOAD_RATIO) {
           this._resize(this._capacity * HashMap.SIZE_RATIO);
       }
+
       //Find the slot where this key should be in
       const index = this._findSlot(key);
 
@@ -169,3 +170,4 @@ class HashMap {
   }
 }
 module.exports = HashMap;
+
