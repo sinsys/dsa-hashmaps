@@ -25,10 +25,9 @@ const main = () => {
     let charName = char[charType];
     lotr.set(charType, charName);
   });
+
+  console.log(lotr);
   
 }
 
 main();
-
-Hobbit
-Maiar
