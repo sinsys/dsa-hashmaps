@@ -6,18 +6,26 @@
 
 Walk through the HashMap implementation in the curriculum and understand it well. Then write a HashMap class and its core functions with open addressing as the collision resolution mechanism.
 
-Export your HashMap module
-Create a .js file called HashMaps_drills. In the file import the HashMap module. Create a function called main()
-Inside your main() function, create a hash map called lotr.
-For your hash map that you have created, set the MAX_LOAD_RATIO = 0.5 and SIZE_RATIO = 3.
-Add the following items to your hash map: {"Hobbit": "Bilbo"}, {"Hobbit": "Frodo"},
-{"Wizard": "Gandalf"}, {"Human": "Aragorn"}, {"Elf": "Legolas"}, {"Maiar": "The Necromancer"},
-{"Maiar": "Sauron"}, {"RingBearer": "Gollum"}, {"LadyOfLight": "Galadriel"}, {"HalfElven": "Arwen"},
-{"Ent": "Treebeard"}
-Print your hash map and notice the length and items that are hashed in your hash map. Have you hashed all the items you were asked to?
-Retrieve the value that is hashed in the key "Maiar" and Hobbit.
-What are the values of Maiar and Hobbit that you have? Is there a discrepancy? Explain your answer.
-What is the capacity of your hash table after you have hashed all the above items? Explain your answer.
+ - Export your HashMap module  
+ - Create a .js file called HashMaps_drills. In the file import the HashMap module. Create a function called main()
+ - Inside your main() function, create a hash map called lotr.
+ - For your hash map that you have created, set the MAX_LOAD_RATIO = 0.5 and SIZE_RATIO = 3.
+ - Add the following items to your hash map: 
+   - {"Hobbit": "Bilbo"}, 
+   - {"Hobbit": "Frodo"},
+   - {"Wizard": "Gandalf"},
+   - {"Human": "Aragorn"}, 
+   - {"Elf": "Legolas"}, 
+   - {"Maiar": "The Necromancer"},
+   - {"Maiar": "Sauron"}, 
+   - {"RingBearer": "Gollum"}, 
+   - {"LadyOfLight": "Galadriel"}, 
+   - {"HalfElven": "Arwen"},
+   - {"Ent": "Treebeard"}
+ - Print your hash map and notice the length and items that are hashed in your hash map. Have you hashed all the items you were asked to?
+ - Retrieve the value that is hashed in the key "Maiar" and Hobbit.
+ - What are the values of Maiar and Hobbit that you have? Is there a discrepancy? Explain your answer.
+ - What is the capacity of your hash table after you have hashed all the above items? Explain your answer.
 
 ### 2. WhatDoesThisDo  
 
@@ -47,9 +55,9 @@ const WhatDoesThisDo = function(){
 
 *You don't need to write code for the following two drills. use any drawing app or simple pen and paper *
 
-1) Show your hash map after the insertion of keys 10, 22, 31, 4, 15, 28, 17, 88, 59 into a hash map of length 11 using open addressing and a hash function k mod m, where k is the key and m is the length.
+1) Show your hash map after the insertion of keys `10, 22, 31, 4, 15, 28, 17, 88, 59` into a hash map of length 11 using open addressing and a hash function k mod m, where k is the key and m is the length.
 
-2) Show your hash map after the insertion of the keys 5, 28, 19, 15, 20, 33, 12, 17, 10 into the hash map with collisions resolved by separate chaining. Let the hash table have a length m = 9, and let the hash function be k mod m.
+2) Show your hash map after the insertion of the keys `5, 28, 19, 15, 20, 33, 12, 17, 10` into the hash map with collisions resolved by separate chaining. Let the hash table have a length m = 9, and let the hash function be k mod m.
 
 ### 4. Remove duplicates  
 
@@ -61,7 +69,7 @@ Write an algorithm to check whether any permutation of a string is a palindrome.
 
 ### 6. Anagram grouping  
 
-Write an algorithm to group a list of words into anagrams. For example, if the input was ['east', 'cars', 'acre', 'arcs', 'teas', 'eats', 'race'], the output should be: [['east', 'teas', 'eats'], ['cars', 'arcs'], ['acre', 'race']].
+Write an algorithm to group a list of words into anagrams. For example, if the input was `['east', 'cars', 'acre', 'arcs', 'teas', 'eats', 'race']`, the output should be: `[['east', 'teas', 'eats'], ['cars', 'arcs'], ['acre', 'race']]`.
 
 ### 7. Separate Chaining  
 
