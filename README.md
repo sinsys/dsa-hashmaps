@@ -39,6 +39,11 @@ DO NOT run the following code before solving the problem.
 
 What is the output of the following code? explain your answer.
 
+  > `20`
+  > `10`
+  > The string is identical, so when the map is set, the value is overwritten as the key is identical. 10 becomes 20.
+  > Likewise with map2, the string is identical so the value of 20 gets overwritten to 10.  
+  
 ```javascript
 const WhatDoesThisDo = function(){
     let str1 = 'Hello World.';
