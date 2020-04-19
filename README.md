@@ -23,9 +23,15 @@ Walk through the HashMap implementation in the curriculum and understand it well
    - {"HalfElven": "Arwen"},
    - {"Ent": "Treebeard"}
  - Print your hash map and notice the length and items that are hashed in your hash map. Have you hashed all the items you were asked to?
+   - > The length is 9. Yes I have.  
  - Retrieve the value that is hashed in the key "Maiar" and Hobbit.
+   - > Maiar = "Sauron"
+   - > Hobbit = "Frodo"  
  - What are the values of Maiar and Hobbit that you have? Is there a discrepancy? Explain your answer.
+   - > Maiar = "Sauron"  
+   - > Hobbit = "Frodo"  
  - What is the capacity of your hash table after you have hashed all the above items? Explain your answer.
+   - > 24. Original size is 8. Once the HashMap hits 50% capacity, it increases its capacity to 3 * capacity, making it 24.
 
 ### 2. WhatDoesThisDo  
 

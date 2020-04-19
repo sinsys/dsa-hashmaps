@@ -21,7 +21,7 @@
 //    - {"Ent": "Treebeard"}
 //  - Print your hash map and notice the length and items that are hashed in your hash map. 
 //      Have you hashed all the items you were asked to?
-//  - Retrieve the value that is hashed in the key "Maiar" and Hobbit.
+//  - Retrieve the value that is hashed in the key "Maiar" and "Hobbit".
 //  - What are the values of Maiar and Hobbit that you have? Is there a discrepancy? 
 //      Explain your answer.
 //  - What is the capacity of your hash table after you have hashed all the above items? 
@@ -49,14 +49,19 @@ const main = () => {
   HashMap.MAX_LOAD_RATIO = 0.5;
   HashMap.SIZE_RATIO = 3;
 
+  // Load up our map with all of our characters
   characters.forEach(char => {
     let charType = Object.keys(char)[0];
     let charName = char[charType];
     lotr.set(charType, charName);
   });
 
+  // Log the map
   console.log(lotr);
-  
+  // Log Maiar's val
+  console.log(lotr.get("Maiar"));
+  // Log Hobbit's val
+  console.log(lotr.get("Hobbit"));
 }
 
 main();

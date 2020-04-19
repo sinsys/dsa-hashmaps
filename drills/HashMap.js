@@ -82,7 +82,7 @@ class HashMap {
           hash = (hash << 5) + hash + string.charCodeAt(i);
           //converting hash to a 32 bit integer
           hash = hash & hash;
-      }
+          console.log(hash);      }
       //making sure hash is unsigned - meaning non-negtive number. 
       return hash >>> 0;
   }
