@@ -9,7 +9,7 @@ class HashMap {
   get(key) {
       const index = this._findSlot(key);
       if (this._hashTable[index] === undefined) {
-          throw new Error('Key error');
+          return null;
       }
       return this._hashTable[index].value;
   }
@@ -19,7 +19,6 @@ class HashMap {
       if (loadRatio > HashMap.MAX_LOAD_RATIO) {
           this._resize(this._capacity * HashMap.SIZE_RATIO);
       }
-
       //Find the slot where this key should be in
       const index = this._findSlot(key);
 
@@ -82,10 +81,10 @@ class HashMap {
           hash = (hash << 5) + hash + string.charCodeAt(i);
           //converting hash to a 32 bit integer
           hash = hash & hash;
-          console.log(hash);      }
+      }
       //making sure hash is unsigned - meaning non-negtive number. 
       return hash >>> 0;
   }
 }
-module.exports = HashMap;
 
+module.exports = HashMap;
