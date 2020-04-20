@@ -66,9 +66,35 @@ const WhatDoesThisDo = function(){
 
 *You don't need to write code for the following two drills. use any drawing app or simple pen and paper *
 
-1) Show your hash map after the insertion of keys `10, 22, 31, 4, 15, 28, 17, 88, 59` into a hash map of length 11 using open addressing and a hash function k mod m, where k is the key and m is the length.
+1) Show your hash map after the insertion of keys `10, 22, 31, 4, 15, 28, 17, 88, 59` into a hash map of length 11 using open addressing and a hash function k mod m, where k is the key and m is the length.  
 
-2) Show your hash map after the insertion of the keys `5, 28, 19, 15, 20, 33, 12, 17, 10` into the hash map with collisions resolved by separate chaining. Let the hash table have a length m = 9, and let the hash function be k mod m.
+|Cell|Val|Notes                                                                                          |Val|K mod M|
+|----|---|-----------------------------------------------------------------------------------------------|---|-------|
+|0   |22 |                                                                                               |10 |10     |
+|1   |88 |88 collides with 22, so it is moved to the next available slot.                                |22 |0      |
+|2   |   |                                                                                               |31 |9      |
+|3   |   |                                                                                               |4  |4      |
+|4   |4  |                                                                                               |15 |4      |
+|5   |15 |15 Collides with 4, so it is moved to the next available slot.                                 |28 |6      |
+|6   |28 |                                                                                               |17 |6      |
+|7   |17 |17 collides with 28, so it is moved to the next available slot.                                |88 |0      |
+|8   |59 |59 collides with 15, so it is moved to the next available slot.                                |59 |4      |
+|9   |31 |                                                                                               |   |       |
+|10  |10 |                                                                                               |   |       |  
+
+2) Show your hash map after the insertion of the keys `5, 28, 19, 15, 20, 33, 12, 17, 10` into the hash map with collisions resolved by separate chaining. Let the hash table have a length m = 9, and let the hash function be k mod m.  
+
+|Cell|Val           |Notes                                                                        |Val|K mod M|
+|----|--------------|-----------------------------------------------------------------------------|---|-------|
+|0   |              |                                                                             |5  |5      |
+|1   |28 -> 19 -> 10|19 and 10 both collide with 28 so they are added in sequence to a linked list|28 |1      |
+|2   |20            |                                                                             |19 |1      |
+|3   |12            |                                                                             |15 |6      |
+|4   |              |                                                                             |20 |2      |
+|5   |5             |                                                                             |33 |6      |
+|6   |15 -> 33      |33 collides with 15 so it is added in sequence to a linked list              |12 |3      |
+|7   |              |                                                                             |17 |8      |
+|8   |17            |                                                                             |10 |1      |  
 
 ### 4. Remove duplicates  
 
