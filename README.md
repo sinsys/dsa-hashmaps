@@ -110,6 +110,8 @@ Write an algorithm to check whether any permutation of a string is a palindrome.
 
 ### 6. Anagram grouping  
 
+  > `./drills/anagrams.js`  
+  
 Write an algorithm to group a list of words into anagrams. For example, if the input was `['east', 'cars', 'acre', 'arcs', 'teas', 'eats', 'race']`, the output should be: `[['east', 'teas', 'eats'], ['cars', 'arcs'], ['acre', 'race']]`.
 
 ### 7. Separate Chaining  
