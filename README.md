@@ -104,6 +104,8 @@ Implement a function to delete all duplicated characters in a string and keep on
 
 ### 5. Any permutation a palindrome  
 
+  > `./drills/palindromes.js`  
+  
 Write an algorithm to check whether any permutation of a string is a palindrome. Given the string "acecarr", the algorithm should return true, because the letters in "acecarr" can be rearranged to "racecar", which is a palindrome. In contrast, given the word "north", the algorithm should return false, because there's no way to rearrange those letters to be a palindrome.
 
 ### 6. Anagram grouping  
